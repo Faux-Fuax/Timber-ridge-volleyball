@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUAX Volleyball HQ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Bungee&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Fredoka', sans-serif; background-color: #f8fafc; }
+        .bungee { font-family: 'Bungee', cursive; }
+        .card-shadow { box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.07); }
+        .practice-border { border-left: 6px solid #2dd4bf; }
+        .game-border { border-left: 6px solid #f472b6; }
+        .bounce { transition: transform 0.2s ease-in-out; }
+        .bounce:active { transform: scale(0.98); }
+        input[type="checkbox"]:checked + label { text-decoration: line-through; color: #94a3b8; }
+    </style>
+</head>
+<body class="p-4 pb-28">
+
+    <header class="text-center mb-6 pt-4">
+        <h1 class="bungee text-4xl text-teal-600 drop-shadow-sm tracking-wider">FUAX</h1>
+        <p class="text-pink-500 font-bold tracking-[0.2em] text-sm uppercase">Volleyball Squad</p>
+    </header>
+
+    <div class="max-w-md mx-auto mb-6 bg-teal-500 text-white rounded-2xl p-4 text-center shadow-lg">
+        <p class="text-[10px] font-black uppercase tracking-widest opacity-80">Next Game In</p>
+        <div id="countdown" class="text-3xl font-bold bungee italic">--:--:--</div>
+    </div>
+
+    <section class="max-w-md mx-auto mb-8 bg-gradient-to-br from-yellow-300 to-orange-400 p-1 rounded-3xl rotate-1">
+        <div class="bg-white rounded-[22px] p-5 text-center">
+            <span class="text-2xl">🌟</span>
+            <h2 class="bungee text-xl text-orange-500 mt-1">Player of the Week</h2>
+            <p class="text-2xl font-bold text-gray-800 mt-2">Coming Soon!</p>
+            <p class="text-sm text-gray-500 mt-1 italic">"For amazing hustle and team spirit!"</p>
+        </div>
+    </section>
+
+    <section class="max-w-md mx-auto mb-8">
+        <h2 class="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">✅ Game Day Ready?</h2>
+        <div class="bg-white p-4 rounded-2xl card-shadow border border-gray-100 space-y-2 text-sm">
+            <div class="flex items-center gap-3"><input type="checkbox" id="i1" class="w-4 h-4 accent-pink-500"><label for="i1">Jersey & Shorts</label></div>
+            <div class="flex items-center gap-3"><input type="checkbox" id="i2" class="w-4 h-4 accent-pink-500"><label for="i2">Knee Pads & Court Shoes</label></div>
+            <div class="flex items-center gap-3"><input type="checkbox" id="i3" class="w-4 h-4 accent-pink-500"><label for="i3">Water Bottle (Full!)</label></div>
+        </div>
+    </section>
+
+    <div class="max-w-md mx-auto space-y-3">
+        <h2 class="text-lg font-bold text-gray-800 px-1">Full April Schedule</h2>
+
+        <div class="practice-border bg-white p-4 rounded-xl card-shadow flex justify-between items-center bounce">
+            <div><p class="text-[10px] font-black text-teal-500 uppercase">Mon • Apr 1</p><h3 class="font-bold text-gray-800">Practice</h3></div>
+            <span class="text-xs font-bold text-teal-600 bg-teal-50 px-2 py-1 rounded">6:30 PM</span>
+        </div>
+
+        <div class="practice-border bg-white p-4 rounded-xl card-shadow flex justify-between items-center bounce">
+            <div><p class="text-[10px] font-black text-teal-500 uppercase">Fri • Apr 3</p><h3 class="font-bold text-gray-800">Practice</h3></div>
+            <span class="text-xs font-bold text-teal-600 bg-teal-50 px-2 py-1 rounded">6:15 PM</span>
+        </div>
+
+        <div class="game-border bg-pink-50/50 p-4 rounded-xl card-shadow border border-pink-100 flex justify-between items-center bounce">
+            <div><p class="text-[10px] font-black text-pink-500 uppercase">Thu • Apr 9</p><h3 class="font-bold text-gray-800 italic">GAME 01 🏐</h3><p class="text-[10px] text-gray-400">Boys & Girls Club</p></div>
+            <span class="bg-pink-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg">6:30 PM</span>
+        </div>
+
+        <div class="game-border bg-orange-50 p-4 rounded-xl card-shadow border border-orange-100 flex justify-between items-center bounce">
+            <div><p class="text-[10px] font-black text-orange-500 uppercase">Thu • Apr 16</p><h3 class="font-bold text-gray-800 italic">GAME 02 🏐</h3><p class="text-[10px] text-orange-600 font-bold uppercase underline">Early Start!</p></div>
+            <span class="bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg">5:30 PM</span>
+        </div>
+
+        <div class="game-border bg-pink-50/50 p-4 rounded-xl card-shadow border border-pink-100 flex justify-between items-center bounce">
+            <div><p class="text-[10px] font-black text-pink-500 uppercase">Thu • Apr 23</p><h3 class="font-bold text-gray-800 italic">GAME 03 🏐</h3><p class="text-[10px] text-gray-400">Boys & Girls Club</p></div>
+            <span class="bg-pink-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg">6:30 PM</span>
+        </div>
+
+        <div class="game-border bg-pink-50/50 p-4 rounded-xl card-shadow border border-pink-100 flex justify-between items-center bounce">
+            <div><p class="text-[10px] font-black text-pink-500 uppercase">Thu • Apr 30</p><h3 class="font-bold text-gray-800 italic">GAME 04 🏐</h3><p class="text-[10px] text-gray-400">Boys & Girls Club</p></div>
+            <span class="bg-pink-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg">6:30 PM</span>
+        </div>
+
+        <div class="practice-border bg-white p-4 rounded-xl card-shadow flex justify-between items-center opacity-80">
+            <div><p class="text-[10px] font-black text-teal-500 uppercase">Apr 7, 10, 14, 21, 27</p><h3 class="font-bold text-gray-800">Weekly Practices</h3><p class="text-[10px] text-gray-400">Mikes Heating Court</p></div>
+            <span class="text-xs font-bold text-teal-600">6:15 PM</span>
+        </div>
+    </div>
+
+    <footer class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-t p-4 shadow-2xl">
+        <div class="max-w-md mx-auto flex justify-around text-center">
+            <a href="tel:8052689085" class="flex flex-col items-center text-teal-600 font-bold text-[10px] uppercase"><span>📞</span>Call</a>
+            <a href="sms:8052689085" class="flex flex-col items-center text-blue-500 font-bold text-[10px] uppercase"><span>💬</span>Text</a>
+            <a href="mailto:faux.fuax@gmail.com" class="flex flex-col items-center text-pink-500 font-bold text-[10px] uppercase"><span>✉️</span>Email</a>
+        </div>
+    </footer>
+
+    <script>
+        // Set the next game date here (Year, Month[0-11], Day, Hour, Minute)
+        const nextGame = new Date(2026, 3, 9, 18, 30).getTime(); 
+
+        setInterval(() => {
+            const now = new Date().getTime();
+            const distance = nextGame - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m ";
+        }, 1000);
+    </script>
+</body>
+</html>
