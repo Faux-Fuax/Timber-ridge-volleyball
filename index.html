@@ -1,1 +1,115 @@
-<!-- Contents of the original Index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUAX Volleyball HQ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Bungee&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Fredoka', sans-serif; background-color: #f8fafc; }
+        .bungee { font-family: 'Bungee', cursive; }
+        .card-shadow { box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.07); }
+        .practice-border { border-left: 6px solid #2dd4bf; }
+        .game-border { border-left: 6px solid #f472b6; }
+        input[type="checkbox"]:checked + label { text-decoration: line-through; color: #94a3b8; }
+    </style>
+</head>
+<body class="p-4 pb-28">
+
+    <header class="text-center mb-8 pt-4">
+        <h1 class="bungee text-4xl text-teal-600 drop-shadow-sm tracking-wider">FUAX</h1>
+        <p class="text-pink-500 font-bold tracking-[0.2em] text-sm uppercase">Volleyball Squad</p>
+    </header>
+
+    <section class="max-w-md mx-auto mb-10 bg-gradient-to-br from-yellow-300 to-orange-400 p-1 rounded-3xl rotate-1">
+        <div class="bg-white rounded-[22px] p-5 text-center">
+            <span class="text-2xl">🌟</span>
+            <h2 class="bungee text-xl text-orange-500 mt-1">Player of the Week</h2>
+            <p class="text-2xl font-bold text-gray-800 mt-2">Coming Soon!</p>
+            <p class="text-sm text-gray-500 mt-1 italic">"For amazing hustle and team spirit!"</p>
+        </div>
+    </section>
+
+    <section class="max-w-md mx-auto mb-10">
+        <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+            ✅ Game Day Checklist
+        </h2>
+        <div class="bg-white p-5 rounded-2xl card-shadow border border-gray-100 space-y-3">
+            <div class="flex items-center gap-3">
+                <input type="checkbox" id="item1" class="w-5 h-5 rounded accent-pink-500">
+                <label for="item1" class="text-gray-700 font-medium">Uniform / Jersey</label>
+            </div>
+            <div class="flex items-center gap-3">
+                <input type="checkbox" id="item2" class="w-5 h-5 rounded accent-pink-500">
+                <label for="item2" class="text-gray-700 font-medium">Knee Pads & Sneakers</label>
+            </div>
+            <div class="flex items-center gap-3">
+                <input type="checkbox" id="item3" class="w-5 h-5 rounded accent-pink-500">
+                <label for="item3" class="text-gray-700 font-medium">Full Water Bottle</label>
+            </div>
+            <div class="flex items-center gap-3">
+                <input type="checkbox" id="item4" class="w-5 h-5 rounded accent-pink-500">
+                <label for="item4" class="text-gray-700 font-medium">Hair Ties / Headband</label>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-md mx-auto mb-4 flex justify-between items-end">
+        <h2 class="text-xl font-bold text-gray-800">April Schedule</h2>
+        <div class="text-[10px] uppercase font-black text-gray-400 flex gap-3">
+            <span class="text-teal-500">● Practice</span>
+            <span class="text-pink-500">● Game</span>
+        </div>
+    </div>
+
+    <div class="max-w-md mx-auto space-y-3">
+        
+        <div class="practice-border bg-white p-4 rounded-xl card-shadow flex justify-between items-center">
+            <div>
+                <p class="text-[10px] font-black text-teal-500 uppercase">Mon • Apr 1</p>
+                <h3 class="font-bold text-gray-800 text-lg">Practice</h3>
+                <p class="text-xs text-gray-400">Mikes Heating Court</p>
+            </div>
+            <span class="bg-teal-50 text-teal-600 text-xs font-bold px-3 py-1.5 rounded-lg border border-teal-100">6:30 - 7:45 PM</span>
+        </div>
+
+        <div class="game-border bg-pink-50/50 p-4 rounded-xl card-shadow flex justify-between items-center border border-pink-100">
+            <div>
+                <p class="text-[10px] font-black text-pink-500 uppercase">Thu • Apr 9</p>
+                <h3 class="font-bold text-gray-800 text-lg italic">GAME 01 🏐</h3>
+                <p class="text-xs text-gray-500">Boys & Girls Club (TBD)</p>
+            </div>
+            <span class="bg-pink-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg">6:30 PM</span>
+        </div>
+
+        <div class="game-border bg-orange-50 p-4 rounded-xl card-shadow flex justify-between items-center border border-orange-100">
+            <div>
+                <p class="text-[10px] font-black text-orange-500 uppercase">Thu • Apr 16</p>
+                <h3 class="font-bold text-gray-800 text-lg italic">GAME 02 🏐</h3>
+                <p class="text-xs text-orange-600 font-semibold">Early Start! Week 2</p>
+            </div>
+            <span class="bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg">5:30 PM</span>
+        </div>
+
+        </div>
+
+    <footer class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-gray-100 p-4">
+        <div class="max-w-md mx-auto flex justify-between items-center px-6">
+            <a href="tel:8052689085" class="flex flex-col items-center">
+                <span class="text-xl">📞</span>
+                <span class="text-[10px] font-bold text-gray-500 mt-1 uppercase">Call Coach</span>
+            </a>
+            <a href="sms:8052689085" class="flex flex-col items-center">
+                <span class="text-xl">💬</span>
+                <span class="text-[10px] font-bold text-gray-500 mt-1 uppercase">Text Coach</span>
+            </a>
+            <a href="mailto:faux.fuax@gmail.com" class="flex flex-col items-center">
+                <span class="text-xl">✉️</span>
+                <span class="text-[10px] font-bold text-gray-500 mt-1 uppercase">Email Team</span>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
